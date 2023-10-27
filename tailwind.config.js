@@ -9,6 +9,9 @@ export default {
       'yellow':'#facc15',
       'slate':'#1e293b',
       'white': '#fff',
+      'sky': '#369FF4',
+      'megenta': '#9064bf',
+      'red': '#fa575d',
     },
     fontFamily: {
       quicksand: ['Quicksand', 'sans-serif'],

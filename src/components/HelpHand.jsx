@@ -5,10 +5,12 @@ import hand from '../assets/icons/holding-hand.png'
 import home from '../assets/icons/nursing-home.png'
 import social from '../assets/icons/social-responsibility.png'
 import protection from '../assets/icons/protection.png'
+import HelpHandDown from './HelpHandDown'
 
 
 export default function HelpHand() {
   return (
+    <div>
     <div className='flex flex-col'>
 
     <div className='flex flex-col items-center justify-center'>
@@ -89,6 +91,6 @@ export default function HelpHand() {
 
     </div>
         
-    </div>
+    </div><HelpHandDown/></div>
   )
 }

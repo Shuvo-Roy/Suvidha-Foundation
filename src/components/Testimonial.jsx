@@ -16,7 +16,7 @@ export default function Testimonial() {
     <div className="w-5/6 m-auto mb-12">
       <div className="flex flex-col items-center justify-center">
         <h1  className="text-yellow text-4xl">Testimonial</h1>
-        <p  className="text-yellow text-5xl">What people are talking about our charity activities</p>
+        <p  className="text-slate text-5xl">What people are talking about our charity activities</p>
       </div>
       <div>
       <Swiper

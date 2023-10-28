@@ -3,6 +3,7 @@ import Carousel from "./components/Carousel";
 import Events from "./components/Events";
 import HelpHand from "./components/HelpHand";
 import NavMenu from "./components/NavBar/NavMenu";
+import Team from "./components/Team";
 import Testimonial from "./components/Testimonial";
 
 
@@ -14,6 +15,7 @@ function App() {
     <HelpHand/>
     <Events/>
     <Testimonial/>
+    <Team/>
   </div>;
 }
 

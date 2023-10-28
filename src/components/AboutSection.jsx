@@ -1,7 +1,7 @@
 import React from "react";
 const AboutSection = () => {
   return (
-    <div>
+    <div className="w-5/6 m-auto">
       <h1 className="flex flex-col items-center justify-center mt-8 text-3xl text-yellow gap-2">
         Learn About Us<span className="h-1 w-36 bg-yellow"></span>
       </h1>

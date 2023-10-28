@@ -6,7 +6,7 @@ import {FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter} from 'react-icons/fa
 
 export default function Team() {
   return (
-    <div className="">
+    <div className="w-5/6 m-auto">
       <div className="mb-16">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-yellow text-4xl">Testimonial</h1>

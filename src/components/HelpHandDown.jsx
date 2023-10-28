@@ -6,11 +6,14 @@ import { BsGlobeAsiaAustralia } from "react-icons/bs";
 import suvidha from "../assets/about.jpg";
 export default function HelpHandDown() {
   return (
-    <div className="flex sm:flex-col lg:flex-row items-center justify-evenly gap-8">
+    <div className="flex flex-col sm:flex-col lg:flex-row items-center justify-center gap-8 w-5/6 m-auto">
       <div className="">
-        <h1 className="text-yellow text-4xl">We are helping hands On</h1>
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-yellow text-4xl items-center">We are helping hands On</h1>
         <p className="text-slate text-lg">Suvidha Mahila Mandal is a non-profit organization.</p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-16 mt-4">
+      </div>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-16 mt-4">
           <div className="flex flex-row items-center text-2xl gap-4">
             <div>
               <FiUsers className="h-20 w-20 text-yellow"/>

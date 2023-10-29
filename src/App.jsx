@@ -4,8 +4,19 @@ import Layout from "./Layout";
 import Events from "./components/Pages/Events";
 import Gallery from "./components/Pages/Gallery";
 import Contact from "./components/Pages/Contact";
+import gallery from './assets/Gallery/Gallery.js'
+import events from './assets/Events/Events.js'
 
 
+const loaderForEvents = async () => {
+  // Load data for the 'events' route here
+  return events;
+};
+
+const loaderForGallery = async () => {
+  // Load data for the 'gallery' route here
+  return gallery;
+};
 
 const router = createBrowserRouter([
   {
@@ -19,10 +30,12 @@ const router = createBrowserRouter([
       {
         path: "/events",
         element: <Events/>,
+        loader: loaderForEvents,
       },
       {
         path: "/gallery",
         element: <Gallery/>,
+        loader: loaderForGallery,
       },
       {
         path: "/contact",

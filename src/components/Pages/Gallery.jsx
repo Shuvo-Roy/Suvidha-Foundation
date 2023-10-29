@@ -1,13 +1,20 @@
-import React from "react";
-import gallery from '../../assets/Gallery/Gallery.js'
+import React, { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 export default function Gallery() {
+  const [gallery, setGallery] = useState([]);
+  //load the data
+  const galleryData = useLoaderData();
+  //set the data
+  useEffect(() => {
+    setGallery(galleryData);
+  }, [galleryData]);
   return (
     <div className="mt-8 mb-8">
       <div className="w-5/6 m-auto">
         <div className="flex flex-col items-center justify-center m-4 p-4">
-          <h1 className="text-yellow text-4xl p-4">Our Gallery</h1>
+          <h1 className="text-yellow text-4xl p-4">Events</h1>
           <p className="text-slate text-5xl">
-            Moments of Impact: Capturing the Journey of Our NGO
+          Our Charity Events: Celebrating Our Impact Together
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 justify-around">

@@ -12,6 +12,7 @@ export default {
       'sky': '#369FF4',
       'megenta': '#9064bf',
       'red': '#fa575d',
+      'whiteXtra': '#fbfcff',
     },
     fontFamily: {
       quicksand: ['Quicksand', 'sans-serif'],

@@ -8,6 +8,7 @@ import gallery from './assets/Gallery/Gallery.js'
 import events from './assets/Events/Events.js'
 import Verify from "./components/Pages/Verify";
 import Policy from "./components/Pages/Policy";
+import Donations from "./components/Pages/Donations";
 
 
 const loaderForEvents = async () => {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/privacy",
         element: <Policy/>,
+      },
+      {
+        path: "/donations",
+        element: <Donations/>,
       },
     ],
   },

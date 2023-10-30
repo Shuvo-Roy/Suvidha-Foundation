@@ -1,6 +1,7 @@
 import React from "react";
 import { IoHomeOutline } from "react-icons/io5";
 import { CiMail, CiMobile1 } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -58,12 +59,12 @@ export default function Footer() {
             <h1 className="text-yellow text-xl">Useful Links</h1>
           </div>
           <div className="flex flex-col gap-2">
-            <a href="#">
+            <Link to='/verify'>
               <p>Verify Your Certificate</p>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to='verify'>
               <p>Privacy Policy</p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

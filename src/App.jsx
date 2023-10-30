@@ -6,6 +6,7 @@ import Gallery from "./components/Pages/Gallery";
 import Contact from "./components/Pages/Contact";
 import gallery from './assets/Gallery/Gallery.js'
 import events from './assets/Events/Events.js'
+import Verify from "./components/Pages/Verify";
 
 
 const loaderForEvents = async () => {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact/>,
+      },
+      {
+        path: "/verify",
+        element: <Verify/>,
       },
     ],
   },

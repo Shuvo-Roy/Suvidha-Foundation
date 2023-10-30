@@ -62,7 +62,7 @@ export default function Footer() {
             <Link to='/verify'>
               <p>Verify Your Certificate</p>
             </Link>
-            <Link to='verify'>
+            <Link to='/privacy'>
               <p>Privacy Policy</p>
             </Link>
           </div>

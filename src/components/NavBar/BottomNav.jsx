@@ -1,20 +1,55 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export const BottomNav = () => {
+  let Links = [
+    { name: "Events", link: "/events" },
+    { name: "Gallery", link: "/gallery" },
+    { name: "Contact", link: "/contact" },
+    { name: "Apply For Internship", link: "/events" },
+    { name: "Help Now", link: "/donations" },
+  ];
+
+  let [open, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen(!open);
+  };
+
   return (
-    
-    <div className='flex flex-row justify-between items-center'>
-      <div><img src='/src/assets/SuvidhaLogo.png'/></div>
-      <div className='text-white'>
-      <ul className='flex flex-row gap-4 items-center'>
-        <li><button className='bg-yellow px-4 py-2 rounded text-slate'>Apply For Internship</button></li>
-        <li><Link to='/donations'><button className='bg-yellow px-4 py-2 rounded text-slate'>Help Now</button></Link></li>
-        <li className='border rounded border-yellow px-4 py-2 hover:text-yellow '><Link to='/events'>Events</Link></li>
-        <li className='border rounded border-yellow px-4 py-2 hover:text-yellow '><Link to='/gallery'>Gallery</Link></li>
-        <li className='border rounded border-yellow px-4 py-2 hover:text-yellow '><Link to='/contact'>Contact</Link></li>
-      </ul>
+    <div className="flex flex-col sm:flex-row justify-between items-center">
+      <div>
+        <Link to="/">
+          <img src="/src/assets/SuvidhaLogo.png" className="h-5/6 w-9/12" />
+        </Link>
+      </div>
+      <div className="cursor-pointer md:hidden border border-yellow rounded-md absolute right-14 top-9">
+        {open ? (
+          <AiOutlineClose
+            onClick={toggleMenu}
+            className="text-yellow text-3xl m-2"
+          />
+        ) : (
+          <AiOutlineMenu
+            onClick={toggleMenu}
+            className="text-yellow text-3xl m-2"
+          />
+        )}
+      </div>
+      <div
+        className={`text-white md:flex md:items-center transition-transform ease-in-out duration-500 ${open ? ""  : "hidden" }`}
+      >
+        <ul className="flex md:items-center flex-col sm:flex-row gap-4 items-center justify-center ">
+          {Links.map((link, index) => (
+            <li
+              className="border rounded border-yellow px-4 py-2 hover:text-yellow cursor-pointer"
+              key={index}
+            >
+              <Link to={link.link}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  )
-}
+  );
+};

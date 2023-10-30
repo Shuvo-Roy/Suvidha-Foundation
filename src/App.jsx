@@ -10,6 +10,7 @@ import Verify from "./components/Pages/Verify";
 import Policy from "./components/Pages/Policy";
 import Donations from "./components/Pages/Donations";
 
+import './App.css'
 
 const loaderForEvents = async () => {
   // Load data for the 'events' route here

@@ -1,9 +1,28 @@
 .slide-in {
-    transform: translate(0, 0);
-    transition: transform 0.5s ease-in-out;
+  animation: slide-in 1s ease-in forwards;
   }
   
   .slide-out {
-    transform: translate(0, 0%);
-    transition: transform 0.5s ease-in-out;
+    animation: slide-out 2s 1s ease-out forwards;
+  }
+
+  @keyframes slide-in{
+    from{
+      opacity: 1;
+      transform: scale(1)
+    }
+    to{
+      opacity: 1;
+      transform: scale(0)
+    }
+  }
+  @keyframes slide-in{
+    0%{
+      opacity: 1;
+      transform: scale(0)
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1)
+    }
   }

@@ -3,7 +3,7 @@ import suvidha from "../assets/about.jpg";
 
 export default function Events() {
   return (
-    <div className="bg-slate bg-opacity-5 mt-8">
+    <div className="bg-slate bg-opacity-5">
       <div className="w-5/6 m-auto h-3/6">
       <div className="pt-4">
         <h1 className="flex flex-col items-center justify-center text-yellow text-5xl">

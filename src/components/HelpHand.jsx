@@ -9,7 +9,8 @@ import HelpHandDown from "./HelpHandDown";
 
 export default function HelpHand() {
   return (
-    <div className="w-5/6 m-auto">
+    <div className="bg-whiteXtra">
+      <div className="w-5/6 m-auto mb-2">
       <div className="flex flex-col">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-yellow text-4xl">What We Do?</h1>
@@ -120,5 +121,7 @@ export default function HelpHand() {
       </div>
       <HelpHandDown />
     </div>
+    </div>
+    
   );
 }

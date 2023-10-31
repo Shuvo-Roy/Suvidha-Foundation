@@ -16,7 +16,7 @@ const AboutSection = () => {
         unforeseen future.
       </p>
       <div className="flex flex-row gap-2 overflow-hidden mt-4 items-center justify-center h-96 w-full">
-        <div className="h-full m-4">
+        <div className="h-full m-4 slide-out">
           <div className="sm:text-center lg:text-left bg-megenta p-4 rounded-md">
             <h2 className="text-2xl">Mission</h2>
             <p className="text-xl">

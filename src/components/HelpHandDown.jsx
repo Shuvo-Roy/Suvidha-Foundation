@@ -21,9 +21,9 @@ export default function HelpHandDown() {
             </div>
             <div className="h-full w-1 bg-yellow"></div>
             <div>
-              <p className="flex items-center justify-start text-4xl text-yellow">
+              <div className="flex items-center justify-start text-4xl text-yellow">
                 <Counter number={3}/>L<sup>+</sup>
-              </p>
+              </div>
               <h1>Volunteers</h1>
             </div>
           </div>
@@ -34,9 +34,9 @@ export default function HelpHandDown() {
             </div>
             <div className="h-full w-1 bg-yellow"></div>
             <div>
-              <p className="flex items-center  justify-start text-4xl text-sky">
+              <div className="flex items-center  justify-start text-4xl text-sky">
               <Counter number={15}/> <sup>+</sup>
-              </p>
+              </div>
               <h1>Countries</h1>
             </div>
           </div>
@@ -46,9 +46,9 @@ export default function HelpHandDown() {
             </div>
             <div className="h-full w-1 bg-yellow"></div>
             <div>
-              <p className="flex items-center  justify-start text-4xl text-megenta">
+              <div className="flex items-center  justify-start text-4xl text-megenta">
               <Counter number={1}/> Cr<sup>+</sup>
-              </p>
+              </div>
               <h1>Internship Goal</h1>
             </div>
           </div>
@@ -58,9 +58,9 @@ export default function HelpHandDown() {
             </div>
             <div className="h-full w-1 bg-yellow"></div>
             <div>
-              <p className="flex items-center  justify-start text-4xl text-red">
+              <div className="flex items-center  justify-start text-4xl text-red">
               <Counter number={15}/> L<sup>+</sup>
-              </p>
+              </div>
               <h1>Trees Planted</h1>
             </div>
           </div>

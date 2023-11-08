@@ -17,8 +17,8 @@ const Carousel = () => {
     <div className="w-5/6 m-auto">
       <div className="overflow-hidden relative my-8 w-full h-5/6">
       <div className="flex transition ease-out duration-500" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-        {slides.map((slide) => {
-          return <img src={slide.img} className="rounded-xl"/>;
+        {slides.map((slide,i) => {
+          return <img src={slide.img} className="rounded-xl" key={i}/>;
         })}
       </div>
       <div className="absolute top-0 h-full w-full flex justify-between items-center p-4">

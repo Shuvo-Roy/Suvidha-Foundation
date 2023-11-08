@@ -15,10 +15,10 @@ const AboutSection = () => {
         education that stays with the students forever and equip them for the
         unforeseen future.
       </p>
-      <div className="flex flex-row gap-2 overflow-hidden mt-4 items-center justify-center h-96 w-full">
-        <div className="h-full m-4 slide-out">
-          <div className="sm:text-center lg:text-left bg-megenta p-4 rounded-md">
-            <h2 className="text-2xl">Mission</h2>
+      <div className="flex flex-row gap-12 overflow-hidden w-full py-16">
+        <div className="hover:scale-105 transition-all duration-300">
+          <div className="sm:text-center lg:text-left bg-megenta bg-opacity-10 p-4 rounded-md">
+            <h2 className="text-2xl text-center">Mission</h2>
             <p className="text-xl">
               To Inspire Students, help them Innovate and let them Integrate to
               build the next generation humankind. To Run Food Donation And
@@ -26,9 +26,9 @@ const AboutSection = () => {
             </p>
           </div>
         </div>
-        <div className="h-full m-4">
-          <div className="sm:text-center lg:text-left bg-red p-4 rounded-md">
-            <h2 className="text-2xl">Vission</h2>
+        <div className="hover:scale-105 transition-all duration-300">
+          <div className="sm:text-center lg:text-left bg-red bg-opacity-10 p-4 rounded-md">
+            <h2 className="text-2xl text-center">Vission</h2>
             <p className="text-xl">
               To build Next Generation Entrepreneur, by providing them a
               Skill-Based Education. To Provide Internship, Training And
